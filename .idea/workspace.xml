@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="Final Project">
+    <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="Updates to Readme">
       <change beforePath="$PROJECT_DIR$/ReadMe.md" beforeDir="false" afterPath="$PROJECT_DIR$/ReadMe.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/redhatproject/sample/Controller.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/redhatproject/sample/Controller.class" afterDir="false" />
     </list>
     <ignored path="JavaFxApplication.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -73,15 +72,15 @@
           <entry key="dummy" value="8" />
           <entry key="fxml" value="7" />
           <entry key="java" value="2548" />
-          <entry key="md" value="1056" />
-          <entry key="txt" value="66" />
+          <entry key="md" value="1123" />
+          <entry key="txt" value="88" />
           <entry key="xml" value="6" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="JAVA" value="2548" />
-          <entry key="PLAIN_TEXT" value="1130" />
+          <entry key="PLAIN_TEXT" value="1219" />
           <entry key="XML" value="13" />
         </counts>
       </usages-collector>
@@ -448,7 +447,21 @@
       <option name="project" value="LOCAL" />
       <updated>1538674028281</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Final Project">
+      <created>1538674272223</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1538674272223</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Updates to Readme">
+      <created>1538674476841</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1538674476841</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -500,9 +513,9 @@
       <window_info anchor="bottom" id="Problems" order="9" />
       <window_info anchor="bottom" id="Changes" order="10" />
       <window_info anchor="bottom" id="Profiler" order="11" />
-      <window_info anchor="bottom" id="Event Log" order="12" weight="0.3291815" />
+      <window_info anchor="bottom" id="Event Log" order="12" weight="0.32851985" />
       <window_info anchor="bottom" id="Messages" order="13" weight="0.3291815" />
-      <window_info anchor="bottom" id="Terminal" order="14" weight="0.7099644" />
+      <window_info anchor="bottom" id="Terminal" order="14" weight="0.69928825" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.24957842" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -525,7 +538,8 @@
     <MESSAGE value="Add update and remove added" />
     <MESSAGE value="Load and Save" />
     <MESSAGE value="Final Project" />
-    <option name="LAST_COMMIT_MESSAGE" value="Final Project" />
+    <MESSAGE value="Updates to Readme" />
+    <option name="LAST_COMMIT_MESSAGE" value="Updates to Readme" />
   </component>
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
