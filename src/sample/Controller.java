@@ -1,6 +1,8 @@
 package sample;
 
 import com.sun.net.httpserver.Authenticator;
+import com.thoughtworks.xstream.XStream;
+import com.thoughtworks.xstream.io.xml.DomDriver;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
@@ -11,7 +13,7 @@ import javafx.stage.Stage;
 
 
 import java.awt.event.MouseEvent;
-import java.io.IOException;
+import java.io.*;
 import java.util.ArrayList;
 
 public class Controller {
@@ -27,7 +29,8 @@ public class Controller {
 
     ArrayList<Users> ArraylistUsers = new ArrayList();
 
-    public void mSignIn(javafx.scene.input.MouseEvent mouseEvent) {
+    public void mSignIn(javafx.scene.input.MouseEvent mouseEvent) throws Exception {
+        load();
         for (int i = 0; i < ArraylistUsers.size();i++){
             if(ArraylistUsers.get(i).getName().contains(mUserName.getText()) && ArraylistUsers.get(i).getPassword().contains(mPassword.getText())){
                 FXMLLoader fxmlLoader = new FXMLLoader();
@@ -51,7 +54,26 @@ public class Controller {
     }
 
 
-    public void mCreateAccount(ActionEvent actionEvent) {
+    public void mCreateAccount(ActionEvent actionEvent) throws Exception {
         ArraylistUsers.add(new Users(mUserName.getText(),mPassword.getText()));
+        save();
+    }
+
+    //Load
+    @SuppressWarnings("unchecked")
+    public void load() throws Exception
+    {
+        XStream xstream = new XStream(new DomDriver());
+        ObjectInputStream users = xstream.createObjectInputStream(new FileReader("ListOfUsers.xml"));
+        ArraylistUsers = (ArrayList<Users>) users.readObject();
+        users.close();
+    }
+    //Save
+    public void save() throws Exception
+    {
+        XStream xstream = new XStream(new DomDriver());
+        ObjectOutputStream out = xstream.createObjectOutputStream(new FileWriter("ListOfUsers.xml"));
+        out.writeObject(ArraylistUsers);
+        out.close();
     }
 }
