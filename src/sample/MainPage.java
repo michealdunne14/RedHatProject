@@ -7,6 +7,7 @@ import javafx.scene.control.TextField;
 import javafx.scene.control.TreeItem;
 import javafx.scene.control.TreeView;
 import javafx.scene.input.MouseEvent;
+import javafx.scene.text.Text;
 
 
 import javax.swing.text.html.ListView;
@@ -16,7 +17,7 @@ import java.io.ObjectInputStream;
 import java.io.ObjectOutputStream;
 import java.util.ArrayList;
 
-public class MainPage {
+public class MainPage<classes, xStream> {
 
     @FXML
     private TextField mAddItem;
@@ -30,13 +31,15 @@ public class MainPage {
     private TextField mDeleteItem;
 
 
+
+
     ArrayList<Items> arrayList = new ArrayList();
 
     //Adds an item to the database
     public void addItem(MouseEvent mouseEvent) throws Exception {
-        //load();
         arrayList.add(new Items(mAddItem.getText()));
         treeView();
+        save();
     }
     //Updates an item from the database
     public void updateItem(MouseEvent mouseEvent) throws Exception {
@@ -88,5 +91,9 @@ public class MainPage {
         ObjectOutputStream out = xstream.createObjectOutputStream(new FileWriter("ListOfItems.xml"));
         out.writeObject(arrayList);
         out.close();
+    }
+
+    public void loadData(MouseEvent mouseEvent) throws Exception {
+        load();
     }
 }

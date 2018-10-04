@@ -23,12 +23,11 @@ public class Controller {
 
     @FXML
     private Text mNoUser;
-
     @FXML
     public TextField mPassword;
 
     ArrayList<Users> ArraylistUsers = new ArrayList();
-
+    //Sign in user
     public void mSignIn(javafx.scene.input.MouseEvent mouseEvent) throws Exception {
         load();
         for (int i = 0; i < ArraylistUsers.size();i++){
@@ -53,7 +52,7 @@ public class Controller {
         }
     }
 
-
+    //Create an account
     public void mCreateAccount(ActionEvent actionEvent) throws Exception {
         ArraylistUsers.add(new Users(mUserName.getText(),mPassword.getText()));
         save();

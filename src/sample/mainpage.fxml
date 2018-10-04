@@ -4,8 +4,6 @@
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.control.TreeView?>
 <?import javafx.scene.layout.AnchorPane?>
-<?import javafx.scene.text.Text?>
-
 
 <AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.MainPage">
    <children>
@@ -15,8 +13,7 @@
       <Button layoutX="255.0" layoutY="35.0" mnemonicParsing="false" onMouseClicked="#addItem" text="Add Item" />
       <Button layoutX="255.0" layoutY="123.0" mnemonicParsing="false" onMouseClicked="#updateItem" text="Update Item" />
       <Button layoutX="255.0" layoutY="188.0" mnemonicParsing="false" onMouseClicked="#deleteItem" text="Delete Item" />
-      <Text fx:id="mUserid" layoutX="270.0" layoutY="43.0" strokeType="OUTSIDE" strokeWidth="0.0" />
       <TextField fx:id="mTextToUpdate" layoutX="88.0" layoutY="98.0" promptText="Text to update" />
-      <TreeView fx:id="mTreeView" layoutX="369.0" layoutY="36.0" prefHeight="200.0" prefWidth="200.0" />
+      <TreeView fx:id="mTreeView" layoutX="369.0" layoutY="36.0" onMouseClicked="#loadData" prefHeight="200.0" prefWidth="200.0" />
    </children>
 </AnchorPane>
