@@ -1,7 +1,8 @@
 ## Red Hat
 ![alt text](https://upload.wikimedia.org/wikipedia/sco/thumb/6/6c/RedHat.svg/1280px-RedHat.svg.png)
 
-#Introduction
+Introduction
+------------
 This is a project for Red hat
 
 #Features
